@@ -1,0 +1,77 @@
+/* GENERAL STYLE */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+/* MAIN TITLE*/
+
+.main-title {
+  height:90vh;
+}
+
+.main-title h1 {
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.name {
+  font-weight:300;
+}
+
+.arrow-transition {
+  font-size:64px;
+  animation: jump 1.2s infinite;
+}
+
+.arrow-transition:hover {
+  color:#0275d8;
+}
+
+@keyframes jump {
+  0% { transform: translate(0, -100%) scale(1.25, 0.75); }
+    50% { transform: translate(0, -150%) scale(1, 1); }
+    55% { transform: translate(0, -150%) rotate(15deg); }
+    60% { transform: translate(0, -150%) rotate(-15deg); }
+    65% { transform: translate(0, -150%) rotate(15deg); }
+    70% { transform: translate(0, -150%) rotate(-15deg); }
+    100% { transform: translate(0, -100%) scale(1.25, 0.75); }
+}
+
+/* INTRODUCTION */
+#introduction {
+  height:70vh;
+  background-color:#FBFCFC;
+  background-color:#000000;
+}
+
+.intro-para {
+  line-height:2;
+  font-size:20px;
+}
+
+/* CLASS TEXTS */
+#texts {
+  height:100vh;
+  background-color:#FBFCFC;
+}
+
+#texts img {
+  border-radius:10px;
+}
+
+.text-para {
+  font-size:18px;
+}
+
+/* CONCLUSION */
+.con-para {
+  line-height:2;
+  font-size:20px;
+}
